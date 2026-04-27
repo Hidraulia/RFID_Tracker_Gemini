@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permisos estándar -->
+    <uses-permission android:name="android.permission.NFC" />
+    <!-- Algunos SDKs de PDAs requieren permisos adicionales:
+    <uses-permission android:name="android.permission.RFID_PERMISSION" />
+    <uses-permission android:name="com.symbol.emdk.permission.EMDK" />
+    -->
+
+    <application
+        android:name=".RfidTrackerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="RFID Tracker"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RfidTracker">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Declarar el servicio EMDK si es Zebra:
+        <uses-library android:name="com.symbol.emdk" android:required="false"/>
+        -->
+
+    </application>
+
+</manifest>
