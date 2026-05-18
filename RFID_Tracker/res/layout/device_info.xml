@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/layout_padding_15" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_23" android:textColor="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/device_information" android:textAlignment="center" />
+    <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_10">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Series_no" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/DodgerBlue" android:id="@id/deviceSerial" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_10">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_versions" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/DodgerBlue" android:id="@id/appVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_10">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/base_version" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/DodgerBlue" android:id="@id/baseVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_10">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_compile" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/DodgerBlue" android:id="@id/appCompile" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_10">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/base_compile" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/DodgerBlue" android:id="@id/baseCompile" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_10">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_version" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/DodgerBlue" android:id="@id/systemVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_10">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Power_on_time" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/DodgerBlue" android:id="@id/powerOnTime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

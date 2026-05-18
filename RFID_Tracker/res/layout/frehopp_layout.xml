@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/eas_layout" android:background="@drawable/layer" android:padding="@dimen/layout_padding_30" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin_15">
+            <TextView android:textSize="@dimen/text_size_23" android:id="@id/frequency_band_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/work_frequencyRange" />
+            <Spinner android:theme="@style/itemSpinnerStyle" android:textSize="@dimen/text_size_23" android:entries="@array/frequency" android:id="@id/frequency_band" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/frequency_band_text" android:layout_alignBaseline="@id/frequency_band_text" />
+            <Button android:textSize="@dimen/text_size_23" android:id="@id/frequency_range_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/config" android:layout_toRightOf="@id/frequency_band" android:textAllCaps="false" />
+            <TextView android:textSize="@dimen/text_size_23" android:id="@id/fre_band_switch_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_10" android:text="@string/Frequency_hopping_switch" android:layout_below="@id/frequency_band_text" />
+            <Spinner android:theme="@style/itemSpinnerStyle" android:textSize="@dimen/text_size_23" android:entries="@array/AutoFrequency" android:id="@id/fre_band_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_10" android:layout_toRightOf="@id/fre_band_switch_text" android:layout_below="@id/frequency_band_text" android:layout_alignBaseline="@id/fre_band_switch_text" />
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_20" android:layout_below="@id/fre_band_switch_text">
+                <LinearLayout android:id="@id/frebands_layout" android:layout_width="@dimen/layout_width_150" android:layout_height="wrap_content">
+                    <ListView android:id="@id/lv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/move_action_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/frebands_layout">
+                    <ImageButton android:id="@id/right_move" android:layout_width="@dimen/layout_width_140" android:layout_height="wrap_content" android:src="@mipmap/right_move" />
+                    <ImageButton android:id="@id/right_right_move" android:layout_width="@dimen/layout_width_140" android:layout_height="wrap_content" android:src="@mipmap/right_right" />
+                    <ImageButton android:id="@id/left_left_move" android:layout_width="@dimen/layout_width_140" android:layout_height="wrap_content" android:src="@mipmap/left_left" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_25" android:text="@string/select_fre_list" />
+                    <EditText android:enabled="false" android:textColor="@color/IndianRed" android:gravity="top" android:id="@id/fre_band_selects" android:background="@drawable/text_area" android:scrollbars="vertical" android:layout_width="@dimen/layout_width_450" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_25" android:hint="@string/please_left_select" android:maxLines="15" android:minLines="8" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_25">
+                        <Button android:textSize="@dimen/text_size_23" android:id="@id/fre_band_query" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/query" android:textAllCaps="false" />
+                        <Button android:textSize="@dimen/text_size_23" android:id="@id/fre_band_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/config" android:textAllCaps="false" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_23" android:textColor="@android:color/black" android:background="@android:color/white" android:padding="@dimen/layout_padding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_30" android:text="@string/freHopp" />
+    </RelativeLayout>
+</HorizontalScrollView>

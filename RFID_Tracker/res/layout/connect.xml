@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/layout_padding_15" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/deviceConnect" android:textAlignment="center" />
+    <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_20">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connect_type" />
+        <Spinner android:theme="@style/connectSpinnerStyle" android:textSize="@dimen/text_size_20" android:entries="@array/connect" android:id="@id/connect_type" android:background="@drawable/spinner_border" android:layout_width="@dimen/layout_width250" android:layout_height="wrap_content" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_20">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/tcp_param" />
+        <Spinner android:theme="@style/connectSpinnerStyle" android:textSize="@dimen/text_size_20" android:id="@id/rs232_android_port" android:background="@drawable/spinner_border" android:layout_width="@dimen/layout_width_125" android:layout_height="wrap_content" android:textAlignment="center" />
+        <Spinner android:theme="@style/connectSpinnerStyle" android:textSize="@dimen/text_size_20" android:entries="@array/baud" android:id="@id/rs232_android_baud" android:background="@drawable/spinner_border" android:layout_width="@dimen/layout_width_125" android:layout_height="wrap_content" android:textAlignment="center" />
+    </LinearLayout>
+</LinearLayout>

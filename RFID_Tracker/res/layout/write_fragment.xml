@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/layout_padding_15" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Zona escritura:" android:textAlignment="center" />
+        <Spinner android:entries="@array/cus_write_area" android:id="@id/w_f_area" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dirección (bit):" />
+        <EditText android:textSize="@dimen/text_size_20" android:id="@id/w_f_start" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Contenido (Hex):" android:textAlignment="center" />
+    <EditText android:id="@id/w_f_content" android:background="@drawable/text_area" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nº bloque:" />
+        <EditText android:textSize="@dimen/text_size_20" android:id="@id/w_f_block" android:layout_width="@dimen/layout_width_140" android:layout_height="wrap_content" android:text="0" />
+        <CheckBox android:id="@id/w_f_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Escritura bloque" />
+        <Button android:id="@id/w_f_btn" android:layout_width="@dimen/layout_width_100" android:layout_height="wrap_content" android:text="Escribir" android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

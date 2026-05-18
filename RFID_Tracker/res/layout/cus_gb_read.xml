@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/cus_linear" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/layout_padding_15" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_26" android:textColor="@color/colorPrimaryDark" android:id="@id/cus_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cus_read_gb_title" android:textAlignment="center" />
+        <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:textSize="@dimen/text_size_20" android:id="@id/cus_gb_read_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_read_gb" />
+            <Spinner android:theme="@style/itemSpinnerStyle" android:entries="@array/cus_gb_mode" android:id="@id/cus_gb_read_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_25" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_gb_start" />
+            <EditText android:textSize="@dimen/text_size_20" android:id="@id/cus_read_gb_start" android:layout_width="@dimen/layout_width_150" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_gb_content" />
+            <EditText android:textSize="@dimen/text_size_20" android:id="@id/cus_read_gb_content" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_20">
+            <CheckBox android:textSize="@dimen/text_size_20" android:id="@id/cus_gb_read_check_tid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_read_gb_tid" />
+            <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_25" android:text="@string/filter_read_gb_mode" />
+            <Spinner android:theme="@style/itemSpinnerStyle" android:textSize="@dimen/text_size_20" android:entries="@array/tid_read_mode" android:id="@id/cus_readTid_gb_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_read_gb_len" />
+            <EditText android:textSize="@dimen/text_size_20" android:id="@id/filter_read_gb_len" android:layout_width="@dimen/layout_width_150" android:layout_height="wrap_content" android:text="6" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_20">
+            <CheckBox android:textSize="@dimen/text_size_20" android:id="@id/cus_gb_read_check_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_read_gb_user" />
+            <TextView android:textSize="@dimen/text_size_23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_25" android:text="@string/filter_read_gb_userChild" />
+            <Spinner android:theme="@style/itemSpinnerStyle" android:textSize="@dimen/text_size_20" android:entries="@array/cus_gb_user_mode" android:id="@id/filter_read_gb_userChild" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_read_gb_userChild_start" />
+            <EditText android:textSize="@dimen/text_size_20" android:id="@id/filter_read_gb_userChild_start" android:layout_width="@dimen/layout_width_150" android:layout_height="wrap_content" android:text="4" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_read_gb_userChild_len" />
+            <EditText android:textSize="@dimen/text_size_20" android:id="@id/cus_read_gb_len" android:layout_width="@dimen/layout_width_150" android:layout_height="wrap_content" android:text="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_20">
+            <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_read_gb_userChild_pas" />
+            <EditText android:textSize="@dimen/text_size_20" android:id="@id/filter_read_gb_userChild_pas" android:layout_width="@dimen/layout_width250" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

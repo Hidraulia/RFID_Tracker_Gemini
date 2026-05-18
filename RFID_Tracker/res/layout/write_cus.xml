@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cus_linear" android:padding="@dimen/layout_padding_15" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_26" android:textColor="@color/colorPrimaryDark" android:id="@id/cus_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cCus" android:textAlignment="center" />
+    <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/matchingParam" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Spinner android:textSize="@dimen/text_size_20" android:entries="@array/cus_mode" android:id="@id/cus_6c_mode" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cusStart" />
+        <EditText android:textSize="@dimen/text_size_20" android:id="@id/cus_start" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cusEpc" />
+        <EditText android:textSize="@dimen/text_size_20" android:id="@id/cus_epc" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cusTid" />
+        <EditText android:textSize="@dimen/text_size_20" android:id="@id/cus_tid" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cusPas" />
+        <EditText android:textSize="@dimen/text_size_20" android:id="@id/cus_pas" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" android:hint="00000000" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cusUser" android:textAlignment="center" />
+    <EditText android:id="@id/cus_user" android:background="@drawable/text_area" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="5.0dp" />
+    <android.support.design.widget.TabLayout android:id="@id/tab" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tabGravity="center" app:tabTextAppearance="@style/MyTabLayoutTextAppearanceInverse" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="220.0dp" />
+</LinearLayout>

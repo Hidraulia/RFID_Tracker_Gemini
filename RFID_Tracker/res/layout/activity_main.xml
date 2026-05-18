@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:layout_gravity="top" android:id="@id/tabHead" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/list_item" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                    <android.support.v7.widget.RecyclerView android:id="@id/recycle" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <View android:background="@color/SteelBlue3" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RadioGroup android:gravity="center|top" android:orientation="horizontal" android:id="@id/way" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RadioButton android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_16" android:id="@id/single" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_padding_10" android:checked="true" android:text="@string/single" />
+                    <RadioButton android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_16" android:id="@id/loop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/loop" />
+                    <EditText android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_16" android:id="@id/loop_time" android:layout_width="100.0dp" android:layout_height="wrap_content" android:layout_marginRight="150.0dp" android:checked="false" android:hint="Temporizador: seg" android:maxLength="4" android:inputType="number" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioGroup android:gravity="center|bottom" android:orientation="horizontal" android:id="@id/type" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RadioButton android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_14" android:id="@id/c" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/c" />
+                    <RadioButton android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_14" android:id="@id/b" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b" />
+                    <RadioButton android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_14" android:id="@id/gb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gb" />
+                    <RadioButton android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_14" android:id="@id/gjb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gjb" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                    <LinearLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.4">
+                        <TextView android:textSize="@dimen/text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Tag_Count" />
+                        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/DodgerBlue" android:id="@id/tagCount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.4">
+                        <TextView android:textSize="@dimen/text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/TotalCount" />
+                        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/DodgerBlue" android:id="@id/readCount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.6">
+                        <TextView android:textSize="@dimen/text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:text="@string/time" />
+                        <TextView android:textSize="@dimen/text_size_14" android:id="@id/timeCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00(s)" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.4">
+                        <TextView android:textSize="@dimen/text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed" />
+                        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/DodgerBlue" android:id="@id/speed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/text_size_20" android:textColor="@color/colorPrimaryDark" android:id="@id/read" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/readCard" android:layout_weight="1.0" android:textAllCaps="false" />
+            <Button android:textSize="@dimen/text_size_20" android:textColor="@color/colorPrimaryDark" android:id="@id/cus_read" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/cus_readCard" android:layout_weight="1.0" android:textAllCaps="false" />
+            <Button android:textSize="@dimen/text_size_20" android:textColor="@color/colorPrimaryDark" android:id="@id/stop" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/stop" android:layout_weight="1.0" android:textAllCaps="false" />
+            <Button android:textSize="@dimen/text_size_20" android:textColor="@color/colorPrimaryDark" android:id="@id/clean" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/clean" android:layout_weight="1.0" android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <cc.trity.floatingactionbutton.FloatingActionsMenu android:layout_gravity="end|bottom" android:id="@id/fab_menu" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:layout_marginBottom="100.0dp" app:borderWidth="0.0dp" app:elevation="5.0dp" app:fabSize="normal" app:layout_anchorGravity="end|top">
+        <cc.trity.floatingactionbutton.FloatingActionButton android:id="@id/exportExcel" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:borderWidth="0.0dp" app:elevation="5.0dp" app:fabSize="mini" app:fab_colorNormal="#0099cc" app:fab_icon="@mipmap/excel" />
+        <cc.trity.floatingactionbutton.FloatingActionButton android:id="@id/exportTxt" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:borderWidth="0.0dp" app:elevation="5.0dp" app:fabSize="mini" app:fab_colorNormal="#0099cc" app:fab_icon="@mipmap/txt" />
+        <cc.trity.floatingactionbutton.FloatingActionButton android:id="@id/exportCsv" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:borderWidth="0.0dp" app:elevation="5.0dp" app:fabSize="mini" app:fab_colorNormal="#0099cc" app:fab_icon="@mipmap/csv" />
+        <cc.trity.floatingactionbutton.FloatingActionButton android:id="@id/fab_cus" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:borderWidth="0.0dp" app:elevation="5.0dp" app:fabSize="mini" app:fab_colorNormal="#0099cc" app:fab_icon="@mipmap/write_cus" />
+        <cc.trity.floatingactionbutton.FloatingActionButton android:id="@id/fab_user" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:borderWidth="0.0dp" app:elevation="5.0dp" app:fabSize="mini" app:fab_colorNormal="#0099cc" app:fab_icon="@mipmap/write_user" />
+        <cc.trity.floatingactionbutton.FloatingActionButton android:id="@id/fab_epc" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:borderWidth="0.0dp" app:elevation="5.0dp" app:fabSize="mini" app:fab_colorNormal="#0099cc" app:fab_icon="@mipmap/write_epc" />
+    </cc.trity.floatingactionbutton.FloatingActionsMenu>
+</android.support.design.widget.CoordinatorLayout>

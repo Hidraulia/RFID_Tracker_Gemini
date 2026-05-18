@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cus_linear" android:padding="@dimen/layout_padding_15" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_26" android:textColor="@color/colorPrimaryDark" android:id="@id/cus_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cus_read_title" android:textAlignment="center" />
+    <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <TextView android:textSize="@dimen/text_size_20" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/matchingParam" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Spinner android:textSize="@dimen/text_size_18" android:entries="@array/cus_mode" android:id="@id/cus_read_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_filter_start" />
+        <EditText android:textSize="@dimen/text_size_18" android:id="@id/cus_read_start" android:layout_width="@dimen/layout_width_100" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cusContent" />
+        <EditText android:textSize="@dimen/text_size_18" android:id="@id/cus_read_match_content" android:layout_width="@dimen/layout_width_360" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="5.0dp" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cusTid" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_tid_mode" />
+                <Spinner android:textSize="@dimen/text_size_18" android:entries="@array/tid_read_mode" android:id="@id/cus_read_tid_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_tid_len" />
+                <EditText android:textSize="@dimen/text_size_18" android:id="@id/cus_read_tid_len" android:layout_width="@dimen/layout_width_70" android:layout_height="wrap_content" android:text="6" />
+                <CheckBox android:textSize="@dimen/text_size_18" android:id="@id/read_tid_true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_tid" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cusUser" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_user_start" />
+                <EditText android:textSize="@dimen/text_size_18" android:id="@id/cus_read_user_start" android:layout_width="@dimen/layout_width_70" android:layout_height="wrap_content" android:text="0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_tid_len" />
+                <EditText android:textSize="@dimen/text_size_18" android:id="@id/cus_read_user_len" android:layout_width="@dimen/layout_width_70" android:layout_height="wrap_content" android:text="6" />
+                <CheckBox android:textSize="@dimen/text_size_18" android:id="@id/read_user_true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_userData" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_reserve" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_user_start" />
+                <EditText android:textSize="@dimen/text_size_18" android:id="@id/cus_read_reserve_start" android:layout_width="@dimen/layout_width_70" android:layout_height="wrap_content" android:text="0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_tid_len" />
+                <EditText android:textSize="@dimen/text_size_18" android:id="@id/cus_read_reserve_len" android:layout_width="@dimen/layout_width_70" android:layout_height="wrap_content" android:text="4" />
+                <CheckBox android:textSize="@dimen/text_size_18" android:id="@id/read_reserve_true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_reserved" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_other" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:textSize="@dimen/text_size_18" android:id="@id/read_other_pas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_read_pas" />
+                <EditText android:textSize="@dimen/text_size_18" android:id="@id/cus_read_pas" android:layout_width="@dimen/layout_width_200" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

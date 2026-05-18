@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/safetyRoot"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF4CAF50">
+
+    <!-- BARRA SUPERIOR: Logo + Título -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+        <ImageView
+            android:id="@+id/ivCostaLogo"
+            android:layout_width="110dp"
+            android:layout_height="44dp"
+            android:src="@drawable/costa_logo"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true" />
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEGURIDAD PISTA"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#3270A0" />
+    </LinearLayout>
+
+    <!-- PANEL CONFIGURACIÓN RSSI -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CC000000"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distancia min (RSSI):"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF"
+                android:paddingRight="8dp"/>
+            <EditText
+                android:id="@+id/etRssiThreshold"
+                android:layout_width="72dp"
+                android:layout_height="36dp"
+                android:text="-70"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:inputType="numberSigned"
+                android:background="#55FFFFFF"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:maxLength="5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" dBm"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF"
+                android:paddingRight="10dp"/>
+            <Button
+                android:id="@+id/btnSetRssi"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:text="Aplicar"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="#3270A0"
+                android:textStyle="bold"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvRssiHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-90=lejos (~10m)  -70=medio (~3m)  -40=muy cerca (&lt;1m)"
+            android:textSize="10sp"
+            android:textColor="#AAFFFFFF"
+            android:paddingTop="2dp"/>
+    </LinearLayout>
+
+    <!-- PANEL ESTADO -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/tvSafetyStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ZONA LIBRE"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:paddingBottom="12dp"/>
+        <TextView
+            android:id="@+id/tvSafetyEpc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="13sp"
+            android:textColor="#EEFFFFFF"
+            android:gravity="center"
+            android:paddingBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvSafetyRssi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="#CCFFFFFF"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- BARRA CONTADOR + CONFIRMAR -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="8dp"
+        android:background="#44000000">
+        <TextView
+            android:id="@+id/tvSafetyCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Detecciones: 0"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+        <Button
+            android:id="@+id/btnSafetyConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="ZONA SEGURA"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:textColor="#C62828"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <!-- LOG -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#33000000"
+        android:padding="6dp">
+        <TextView
+            android:id="@+id/tvSafetyLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="10sp"
+            android:textColor="#DDFFFFFF"/>
+    </ScrollView>
+
+    <!-- BOTÓN VOLVER -->
+    <Button
+        android:id="@+id/btnSafetyBack"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Salir del modo seguridad"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:background="#3270A0"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+</LinearLayout>

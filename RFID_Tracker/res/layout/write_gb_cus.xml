@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/layout_padding_15" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_w_area" android:textAlignment="center" />
+        <Spinner android:entries="@array/cus_gb_write_mode" android:id="@id/cus_gb_area" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_gb_start" />
+        <EditText android:textSize="@dimen/text_size_20" android:id="@id/cus_gb_start" android:layout_width="94.0dp" android:layout_height="wrap_content" android:text="0" />
+        <CheckBox android:textSize="@dimen/text_size_18" android:id="@id/gbWave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_padding_10" android:text="Onda portadora" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_w_content" android:textAlignment="center" />
+    <EditText android:id="@id/cus_gb_content" android:background="@drawable/text_area" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:layout_gravity="right" android:id="@id/cus_gb_write_event" android:layout_width="@dimen/layout_width_100" android:layout_height="wrap_content" android:text="@string/cus_write" android:textAllCaps="false" />
+</LinearLayout>

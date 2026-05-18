@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/layout_padding_15" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/lock_epc_stub" android:layout="@layout/lock_epc_item" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/lock_6b_stub" android:layout="@layout/lock_6b_item" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button android:layout_gravity="right" android:id="@id/lock" android:layout_width="@dimen/layout_width_100" android:layout_height="wrap_content" android:text="@string/lock" android:textAllCaps="false" />
+</LinearLayout>

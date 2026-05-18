@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:backgroundTintMode="screen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_23" android:textColor="@color/DodgerBlue" android:id="@id/version" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_version" android:textAlignment="center" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="10.0">
+        <Button android:textSize="@dimen/text_size_20" android:layout_gravity="center" android:id="@id/readOrWrite" android:background="@drawable/button_style" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" android:text="@string/readOrWrite" android:textAllCaps="false" />
+        <Button android:textSize="@dimen/text_size_20" android:layout_gravity="center" android:id="@id/rfidConfig" android:background="@drawable/button_style" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_20" android:text="@string/rfid" android:textAllCaps="false" />
+        <Button android:textSize="@dimen/text_size_20" android:gravity="center" android:id="@id/frequencyHopping" android:background="@drawable/button_style" android:visibility="visible" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_20" android:text="@string/frequencyHopping" android:textAllCaps="false" />
+        <Button android:textSize="@dimen/text_size_20" android:gravity="center" android:id="@id/upgradeBtn" android:background="@drawable/button_style" android:visibility="visible" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_20" android:text="@string/upgradeBase" android:textAllCaps="false" />
+        <Button android:textSize="@dimen/text_size_20" android:layout_gravity="center" android:id="@+id/safetyBtn" android:background="@drawable/button_style" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_20" android:text="@string/safety_mode" android:textAllCaps="false" android:backgroundTint="#FF5722" />
+        <Button android:textSize="@dimen/text_size_20" android:layout_gravity="center" android:id="@id/deviceInfo" android:background="@drawable/button_style" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_marginTop_20" android:text="@string/deviceInfo" android:textAllCaps="false" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_gravity="bottom" android:id="@id/connect_param" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center" />
+    </LinearLayout>
+</LinearLayout>

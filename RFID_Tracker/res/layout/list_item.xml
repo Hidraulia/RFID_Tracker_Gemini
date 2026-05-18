@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_23" android:gravity="center" android:background="@drawable/layer" android:layout_width="@dimen/layout_width_70" android:layout_height="wrap_content" android:text="@string/index" />
+    <TextView android:textSize="@dimen/text_size_23" android:gravity="center" android:background="@drawable/layer" android:layout_width="@dimen/layout_width_60" android:layout_height="wrap_content" android:text="@string/type" />
+    <TextView android:textSize="@dimen/text_size_23" android:gravity="center" android:background="@drawable/layer" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" android:text="@string/epc" />
+    <TextView android:textSize="@dimen/text_size_23" android:gravity="center" android:background="@drawable/layer" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" android:text="@string/tid" />
+    <TextView android:textSize="@dimen/text_size_23" android:gravity="center" android:background="@drawable/layer" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" android:text="@string/userData" />
+    <TextView android:textSize="@dimen/text_size_23" android:gravity="center" android:background="@drawable/layer" android:layout_width="@dimen/layout_width250" android:layout_height="wrap_content" android:text="@string/reserveData" />
+    <TextView android:textSize="@dimen/text_size_23" android:gravity="center" android:background="@drawable/layer" android:layout_width="@dimen/layout_width_150" android:layout_height="wrap_content" android:text="@string/totalCount" />
+    <TextView android:textSize="@dimen/text_size_23" android:gravity="center" android:background="@drawable/layer" android:layout_width="@dimen/layout_width_80" android:layout_height="wrap_content" android:text="@string/rssi" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/layout_padding_15" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_26" android:textColor="@color/colorPrimaryDark" android:id="@id/cus_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cus_read_6b_title" android:textAlignment="center" />
+    <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_6b_tid" />
+        <EditText android:textSize="@dimen/text_size_20" android:id="@id/cus_read_filter_6b_tid" android:layout_width="@dimen/layout_width_300" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_6b_content" />
+        <Spinner android:theme="@style/itemSpinnerStyle" android:textSize="@dimen/text_size_20" android:entries="@array/read_6b_content" android:id="@id/cus_read_6b_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_6b_start" />
+        <EditText android:textSize="@dimen/text_size_20" android:id="@id/cus_read_6b_start" android:layout_width="@dimen/layout_width_200" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_6b_len" />
+        <EditText android:textSize="@dimen/text_size_20" android:id="@id/cus_read_6b_len" android:layout_width="@dimen/layout_width_200" android:layout_height="wrap_content" android:text="10" />
+    </LinearLayout>
+</LinearLayout>

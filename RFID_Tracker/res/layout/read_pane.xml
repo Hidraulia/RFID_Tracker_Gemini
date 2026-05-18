@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_30">
+            <CheckBox android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_30" android:textColor="@color/colorPrimaryDark" android:id="@id/ant1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_15" android:checked="true" android:text="ANT1" android:layout_weight="1.0" />
+            <CheckBox android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_30" android:textColor="@color/colorPrimaryDark" android:id="@id/ant2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_15" android:text="ANT2" android:layout_weight="1.0" />
+            <CheckBox android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_30" android:textColor="@color/colorPrimaryDark" android:id="@id/ant3" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_15" android:text="ANT3" android:layout_weight="1.0" />
+            <CheckBox android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_30" android:textColor="@color/colorPrimaryDark" android:id="@id/ant4" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="ANT4" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_30">
+            <CheckBox android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_30" android:textColor="@color/colorPrimaryDark" android:id="@id/ant5" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_15" android:text="ANT5" android:layout_weight="1.0" />
+            <CheckBox android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_30" android:textColor="@color/colorPrimaryDark" android:id="@id/ant6" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_15" android:text="ANT6" android:layout_weight="1.0" />
+            <CheckBox android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_30" android:textColor="@color/colorPrimaryDark" android:id="@id/ant7" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_15" android:text="ANT7" android:layout_weight="1.0" />
+            <CheckBox android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_30" android:textColor="@color/colorPrimaryDark" android:id="@id/ant8" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="ANT8" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/layout_marginTop_20">
+            <Button android:textSize="@dimen/text_size_30" android:id="@id/selectAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selectAll" android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/colorPrimary" android:layout_width="1.5dp" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/way" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_30">
+            <RadioButton android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_30" android:id="@id/single" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_20" android:checked="true" android:text="@string/single" />
+            <RadioButton android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_30" android:id="@id/loop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/loop" />
+        </RadioGroup>
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/type" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_30" android:layout_marginTop="@dimen/layout_marginTop_20">
+            <RadioButton android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_30" android:id="@id/c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_20" android:checked="true" android:text="@string/c" />
+            <RadioButton android:theme="@style/MyCheckBox" android:textSize="@dimen/text_size_30" android:id="@id/b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_20" android:text="@string/b" />
+        </RadioGroup>
+    </LinearLayout>
+    <View android:background="@color/colorPrimary" android:layout_width="1.5dp" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_30">
+            <TextView android:textSize="@dimen/text_size_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_20" android:text="Veces:" />
+            <TextView android:textSize="@dimen/text_size_30" android:id="@id/readCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_30">
+            <TextView android:textSize="@dimen/text_size_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_20" android:text="Etiquetas:" />
+            <TextView android:textSize="@dimen/text_size_30" android:id="@id/tagCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_30">
+            <TextView android:textSize="@dimen/text_size_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_20" android:text="Velocidad:" />
+            <TextView android:textSize="@dimen/text_size_30" android:id="@id/speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_30">
+            <TextView android:textSize="@dimen/text_size_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_marginRight_20" android:text="Tiempo:" />
+            <TextView android:textSize="@dimen/text_size_30" android:id="@id/timeCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00 (s)" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
